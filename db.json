@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Amarjeet",
+      "author": "typicode"
+    },
+    {
+      "name": "Amar",
+      "status": false,
+      "id": 2
+    },
+    {
+      "name": "Anmol",
+      "gender": "M",
+      "department": "IT",
+      "role": "SDE-1",
+      "salary": "1200000",
+      "status": false,
+      "id": 3
+    },
+    {
+      "name": "Arshiya ",
+      "gender": "Female ",
+      "department": "IT",
+      "role": "Tech Support ",
+      "salary": "432",
+      "status": false,
+      "id": 4
+    },
+    {
+      "name": "Amit",
+      "gender": "Male ",
+      "department": "IT",
+      "role": "CEO",
+      "salary": "50000",
+      "status": false,
+      "id": 5
+    },
+    {
+      "name": "Komal",
+      "gender": "Female",
+      "department": "IT",
+      "role": "SDE-2",
+      "salary": "333",
+      "status": false,
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
