@@ -12,7 +12,7 @@ function Employee(){
     const [data, setData] = React.useState([])
     const [isLoading, setIsLoading] = React.useState(false)
     const [isError, setIsError] = React.useState(false)
-    
+
     const getEmployee = () => {
         setIsLoading(true)
         fetch(`http://localhost:3004/posts`)
@@ -57,9 +57,6 @@ function Employee(){
         })
     }
 
-    const showIT = () => {data.map((item) => (
-            <li className={style.empDetails} key={item.id}> {`${item.name} ${item.gender} ${item.department} ${item.role} ${item.salary} - ${item.status}`}</li>
-        ))}
 
     return isLoading ? (<>
         ...loading
@@ -95,12 +92,12 @@ function Employee(){
 
         <br />
         <hr />
-        <button onClick={showIT()}>Show All department</button>
+        <button onClick={getEmployee}>Show All department</button>
         
         <p>Show by Departments</p>
-        <button onClick={() => data.filter((item) => item.department === "Marketing")}>Show Marketing</button>
+        <button>Show Marketing</button>
         <button>Show HR</button>
-        <button onClick={showIT()}>Show IT</button>
+        <button >Show IT</button>
         <button>Show Finanace</button>
 
         <p>Sorting</p>
@@ -111,7 +108,6 @@ function Employee(){
         <ul className={style.Emp}>
             {data.map((item) => (
                 <li className={style.empDetails} key={item.id}> {`${item.name} ${item.gender} ${item.department} ${item.role} ${item.salary} - ${item.status}`}</li>
-
             ))}
         </ul>
     </>)
